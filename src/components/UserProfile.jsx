@@ -17,7 +17,6 @@ export const UserProfile = ({user}) => {
     const query = text === "Created" ? userCreatedPinsQuery(userId) : userSavedPinsQuery(userId)
     sanity.fetch(query).then((data) => {
       setPins(data)
-      console.log(pins)
     })
   }, [text, userId])
 

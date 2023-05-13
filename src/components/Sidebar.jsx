@@ -39,7 +39,7 @@ export const Sidebar = ({closeToggle, user}) => {
               onClick={handleCloseSidebar}
               key={category.name}
             >
-              <img src={category.image} className="w-8 h-8 rounded-full shadow-sm" />
+              <img src={category.image} className="w-8 h-8 rounded-full shadow-sm" alt="" />
               {category.name}
             </NavLink>
           ))}
